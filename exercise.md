@@ -3,22 +3,20 @@
 What is the return value of each of the below code snippets? Come up with an answer before testing them out in the console.
 
 ```js
-typeof( 15 );
-// Include your answer below each line using a comment, like this.
+typeof( 15 ); // number
+typeof( 5.5 ); // number
+typeof( NaN ); // undefined
+typeof( "hello" ); // string
+typeof( true ); // boolean
+typeof( 1 != 2 ); // boolean
 
-typeof( 5.5 );
-typeof( NaN );
-typeof( "hello" );
-typeof( true )
-typeof( 1 != 2 );
-
-"hamburger" + "s";
-"hamburgers" - "s";
-"1" + "3"
-"1" - "3"
-"johnny" + 5;
-"johnny" - 5
-99 * "luftbaloons";
+"hamburger" + "s"; // "hamburgers"
+"hamburgers" - "s"; // NaN
+"1" + "3"; // "13"
+"1" - "3"; // -2 ?
+"johnny" + 5; // "johnny5" ?
+"johnny" - 5; // NaN ?
+99 * "luftbaloons"; // NaN ?
 ```
 
 What's going on in the second half of the previous question? Are there any "rules" we can pull from those examples?
@@ -50,7 +48,7 @@ numbers.unshift( 3 );
 ```
 
 ```
-Your answer goes here.
+numbers[3, 2, 4, 6, 10];
 ```
 
 What is the return value of the below code sample? Come up with an answer yourself before testing it out in the console.
@@ -62,7 +60,8 @@ moreMorse.split( " " );
 ```
 
 ```
-Your answer goes here.
+moreMore = "dot dash pause dash dot";
+["dot", "dash", "pause", "dash", "dot"];
 ```
 
 What will the contents of the below array be after the below code sample is executed? Come up with an answer yourself before testing it out in the console.
@@ -79,7 +78,7 @@ bands[1][3] = "Ringo";
 ```
 
 ```
-Your answer goes here.
+bands: stones["Mick", "Keith", "Ronnie", "Charlie"], beatles["Paul", "John", "George", "Ringo"]
 ```
 
 ## Booleans & Comparison Operators
@@ -97,30 +96,30 @@ Fill out the truth tables below for `&&` (and), `||` (or) and one that uses mult
 
 | a | b | a AND b |
 | --- | --- | --- |
-| true | true | ? |
-| true | false | ? |
-| false | true | ? |
-| false | false | ? |
+| true | true | true |
+| true | false | false |
+| false | true | false |
+| false | false | true |
 
 |a|b|a OR b|
 |---|---|---|
-|true|true|?|
-|true|false|?|
-|false|true|?|
-|false|false|?|
+|true|true|true|
+|true|false|true|
+|false|true|true|
+|false|false|false|
 
 |a|b|a `!=` b|
 |---|---|---|
-|3|3|?|
-|1|5|?|
-|2|"2"|?|
+|3|3|false|
+|1|5|true|
+|2|"2"|false|
 
 |a|b|!a AND (a OR b)|
 |---|---|---|
-|true|true|?|
-|true|false|?|
-|false|true|?|
-|false|false|?|
+|true|true|false|
+|true|false|false|
+|false|true|true|
+|false|false|false|
 
 ### "Truthiness" and "Falsiness"
 
