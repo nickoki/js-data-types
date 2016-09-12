@@ -175,7 +175,21 @@ if (age > 75) {
 Your task is to create a loop that prints out all the odd numbers between 1 and 100...twice! Use a different type of Javascript loop each time.
 
 ```js
-// Your answer goes here.
+function isOdd(num) {
+    return num%2;
+}
+for ( var i = 1; i <= 100; i++) {
+    if (isOdd(i)) {
+        console.log(i);
+    }
+}
+var j = 1;
+while (j <= 100) {
+    if (isOdd(j)) {
+        console.log("Output: " + j + " ");
+    }
+    j++;
+}
 ```
 
 ## Bonus: Fizz-Buzz
