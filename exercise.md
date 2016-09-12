@@ -157,7 +157,17 @@ You're a bouncer at a bar! Given an `age` variable, create a conditional that sa
 * If a patron is older than 75, print out `"Are you sure you want to be here?"`.
 
 ```js
-// Your answer goes here.
+if (age > 75) {
+    console.log('Are you sure you want to be here?');
+} else if (age > 21){
+    console.log('Come on in!');
+} else if (age < 21 && age > 18) {
+    console.log('Come on in (but no drinking)!');
+} else if (age < 18) {
+    console.log("You're too young to be in here!");
+} else {
+    console.log('What age are you?');
+}
 ```
 
 ## Loops
